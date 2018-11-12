@@ -1,6 +1,8 @@
 filetype on
 syntax on
-source /usr/share/vim/google/google.vim
+if filereadable("/usr/share/vim/google/google.vim")
+  source /usr/share/vim/google/google.vim
+endif
 set ignorecase
 set encoding=utf-8
 set number
