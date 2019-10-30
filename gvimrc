@@ -1,9 +1,4 @@
-if has("gui_gtk2")
-   set guifont=Monospace\ 9
-else
-   set guifont=-misc-fixed-medium-r-semicondensed-*-*-120-*-*-c-*-iso10646-1
-endif
-
+set guifont=Monospace\ 9
 set lines=25 columns=84
 
 function GTKLP()
