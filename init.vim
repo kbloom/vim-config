@@ -6,6 +6,7 @@ if filereadable("/usr/share/vim/google/google.vim")
   Glug relatedfiles
   Glug outline-window
 endif
+packadd! taglist
 set ignorecase
 set encoding=utf-8
 set number
@@ -14,6 +15,9 @@ set tabstop=8 shiftwidth=3 softtabstop=3 noexpandtab
 set showmatch " shows matching parenthes (good for lisp)
 set printoptions+=duplex:off
 let g:tex_flavor = "latex"
+let g:ycm_key_list_select_completion = ['<Down>']
+let g:ycm_key_list_previous_completion = ['<Up>']
+let g:ycm_key_list_stop_completion = ['<TAB>', '<Enter>']
 augroup filetype
   au BufRead,BufNewFile *.flex,*.jflex    set filetype=jflex
 augroup END

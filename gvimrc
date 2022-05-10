@@ -1,4 +1,4 @@
-set guifont=Monospace\ 9
+set guifont=Monospace\ 10
 set lines=25 columns=84
 
 function GTKLP()
