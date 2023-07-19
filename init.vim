@@ -5,6 +5,7 @@ if filereadable("/usr/share/vim/google/google.vim")
   Glug youcompleteme-google
   Glug relatedfiles
   Glug outline-window
+  Glug google-csimporter
 endif
 packadd! taglist
 set ignorecase
