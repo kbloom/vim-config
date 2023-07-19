@@ -35,6 +35,8 @@ filetype on
 filetype plugin on
 filetype indent on
 
+set mouse=a
+
 if exists(":Guifont")
   Guifont Monospace:h9
 endif
