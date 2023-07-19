@@ -36,6 +36,7 @@ filetype plugin on
 filetype indent on
 
 set mouse=a
+vmap <LeftRelease> "*ygv
 
 if exists(":Guifont")
   Guifont Monospace:h9
