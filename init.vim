@@ -36,7 +36,11 @@ filetype plugin on
 filetype indent on
 
 set mouse=a
+"Fix select-to-copy in neovim-qt, and also in neovim from the command-line.
 vmap <LeftRelease> "*ygv
+vmap <2-LeftMouse> <2-LeftMouse>"*ygv
+nmap <2-LeftMouse> <2-LeftMouse>"*ygv
+vmap <3-LeftMouse> <3-LeftMouse>"*ygv
 
 if exists(":Guifont")
   Guifont Monospace:h9
