@@ -7,14 +7,13 @@ if filereadable("/usr/share/vim/google/google.vim")
   Glug outline-window
   Glug google-csimporter
 endif
-packadd! taglist
+silent! packadd! taglist
 set ignorecase
 set encoding=utf-8
 set number
 set modeline modelines=5
 set tabstop=8 shiftwidth=3 softtabstop=3 noexpandtab
 set showmatch " shows matching parenthes (good for lisp)
-set printoptions+=duplex:off
 let g:tex_flavor = "latex"
 let g:ycm_key_list_select_completion = ['<Down>']
 let g:ycm_key_list_previous_completion = ['<Up>']
