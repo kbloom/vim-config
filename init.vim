@@ -2,7 +2,6 @@ filetype on
 syntax on
 if filereadable("/usr/share/vim/google/google.vim")
   source /usr/share/vim/google/google.vim
-  Glug youcompleteme-google
   Glug relatedfiles
   Glug outline-window
   Glug google-csimporter
@@ -14,6 +13,20 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-treesitter/nvim-treesitter-textobjects'
 Plug 'https://tpope.io/vim/sleuth.git'
 Plug 'endel/vim-github-colorscheme'
+
+" CiderLSP
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-nvim-lua'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-vsnip'
+Plug 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/vim-vsnip'
+Plug 'neovim/nvim-lspconfig'
+Plug 'onsails/lspkind.nvim'
+if filereadable("/usr/share/vim/google/google.vim")
+  Plug 'sso://googler@user/piloto/cmp-nvim-ciderlsp'
+endif
 
 call plug#end()
 
@@ -104,7 +117,11 @@ require'nvim-treesitter.configs'.setup {
 }
 EOF
 
-
+lua << EOF
+  -- CiderLSP
+  vim.opt.completeopt = { "menu", "menuone", "noselect" }
+  require("lsp")
+EOF
 
 if exists(":Guifont")
   Guifont Monospace:h9
