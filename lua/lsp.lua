@@ -43,6 +43,7 @@ cmp.setup({
     { name = "vim_vsnip" },
     { name = "buffer",   keyword_length = 5 },
     { name = "nvim_ciderlsp" },
+    { name = "buganizer" },
   },
 
   sorting = {

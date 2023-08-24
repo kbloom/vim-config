@@ -14,7 +14,6 @@ Plug 'nvim-treesitter/nvim-treesitter-textobjects'
 Plug 'https://tpope.io/vim/sleuth.git'
 Plug 'endel/vim-github-colorscheme'
 
-" CiderLSP
 Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-nvim-lua'
@@ -24,8 +23,10 @@ Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/vim-vsnip'
 Plug 'neovim/nvim-lspconfig'
 Plug 'onsails/lspkind.nvim'
+Plug 'nvim-lua/plenary.nvim'
 if filereadable("/usr/share/vim/google/google.vim")
   Plug 'sso://googler@user/piloto/cmp-nvim-ciderlsp'
+  Plug 'sso://user/vicentecaycedo/cmp-buganizer'
 endif
 
 call plug#end()
