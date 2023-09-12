@@ -17,6 +17,8 @@ if exists(':GuiScrollBar')
     GuiScrollBar 1
 endif
 
+set title
+
 colorscheme github
 
 
