@@ -73,6 +73,7 @@ endif
 
 lua <<EOF
 require'nvim-treesitter.configs'.setup {
+  ensure_installed = {"cpp", "java", "go", "proto", "bash", "python"},
   textobjects = {
     select = {
       enable = true,
