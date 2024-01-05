@@ -118,6 +118,7 @@ require'nvim-treesitter.configs'.setup {
   },
 }
 EOF
+set foldexpr=nvim_treesitter#foldexpr()
 
 lua << EOF
   -- CiderLSP
