@@ -10,4 +10,4 @@ function! s:SearchWrapped(pattern)
    call search(l:pattern)
 endfunction
 command! -nargs=1 S call s:SearchWrapped("<args>")
-nmap , :S 
+nmap // :S 
