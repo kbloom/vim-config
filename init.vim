@@ -26,6 +26,8 @@ Plug 'onsails/lspkind.nvim'
 Plug 'nvim-lua/plenary.nvim'
 if filereadable("/usr/share/vim/google/google.vim")
   Plug 'sso://googler@user/piloto/cmp-nvim-ciderlsp'
+endif
+if filereadable("/usr/bin/bugged")
   Plug 'sso://user/vicentecaycedo/cmp-buganizer'
 endif
 
