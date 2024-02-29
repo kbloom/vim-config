@@ -65,13 +65,6 @@ filetype indent on
 
 if has('nvim')
   set mouse=a
-  "Fix select-to-copy in neovim-qt, and also in neovim from the command-line.
-  vmap <LeftRelease> "*ygv
-  nmap <2-LeftMouse> <2-LeftMouse>"*ygv
-  vmap <2-LeftMouse> <2-LeftMouse>"*ygv
-  imap <2-LeftMouse> <2-LeftMouse><Cmd>:normal "*ygvi<CR>
-  vmap <3-LeftMouse> <3-LeftMouse>"*ygv
-
   au FocusGained,BufEnter * :checktime
 endif
 
