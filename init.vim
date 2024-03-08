@@ -13,6 +13,7 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-treesitter/nvim-treesitter-textobjects'
 Plug 'https://tpope.io/vim/sleuth.git'
 Plug 'endel/vim-github-colorscheme'
+Plug 'lervag/file-line'
 
 Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-nvim-lsp'
