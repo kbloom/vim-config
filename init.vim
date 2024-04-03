@@ -71,7 +71,7 @@ endif
 
 lua <<EOF
 require'nvim-treesitter.configs'.setup {
-  ensure_installed = {"cpp", "java", "go", "proto", "bash", "python"},
+  ensure_installed = {"cpp", "java", "go", "proto", "bash", "python", "textproto"},
   textobjects = {
     select = {
       enable = true,
@@ -115,6 +115,7 @@ require'nvim-treesitter.configs'.setup {
     },
   },
 }
+vim.treesitter.language.register("textproto","textpb")
 EOF
 set foldexpr=nvim_treesitter#foldexpr()
 
