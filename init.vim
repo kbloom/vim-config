@@ -25,6 +25,8 @@ Plug 'hrsh7th/vim-vsnip'
 Plug 'neovim/nvim-lspconfig'
 Plug 'onsails/lspkind.nvim'
 Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' }
 if filereadable("/usr/share/vim/google/google.vim")
   Plug 'sso://googler@user/piloto/cmp-nvim-ciderlsp'
 endif
@@ -52,7 +54,6 @@ augroup filetype
 augroup END
 au Syntax jflex    so ~/.vim/syntax/jflex.vim
 
-
 noremap q <Nop>
 noremap Q q
 
@@ -60,6 +61,9 @@ set rtp+=/usr/lib/google-golang/misc/vim
 
 nmap <F4> :call OpenFileFromClipboard()
 imap <F4> :call OpenFileFromClipboard()
+
+imap <C-x><C-l> <Esc>:Telescope bugged
+
 filetype on
 filetype plugin on
 filetype indent on
