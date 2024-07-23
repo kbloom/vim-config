@@ -132,3 +132,10 @@ EOF
 if exists(":Guifont")
   Guifont Monospace:h9
 endif
+
+if exists("g:neovide")
+  set guifont=Monospace:h9
+  let g:neovide_position_animation_length=0
+  let g:neovide_scroll_animation_length=0.15
+  let g:neovide_cursor_animation_length=0
+endif
