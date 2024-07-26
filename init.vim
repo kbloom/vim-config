@@ -138,4 +138,5 @@ if exists("g:neovide")
   let g:neovide_position_animation_length=0
   let g:neovide_scroll_animation_length=0.15
   let g:neovide_cursor_animation_length=0
+  colorscheme github
 endif
