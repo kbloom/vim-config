@@ -41,7 +41,6 @@ set ignorecase
 set encoding=utf-8
 set number
 set noincsearch
-set autochdir
 set modeline modelines=5
 set tabstop=8 shiftwidth=3 softtabstop=3 noexpandtab
 set showmatch " shows matching parenthes (good for lisp)
