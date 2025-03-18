@@ -1,17 +1,19 @@
 filetype on
 syntax on
+
+call plug#begin()
 if filereadable("/usr/share/vim/google/google.vim")
   source /usr/share/vim/google/google.vim
   Glug relatedfiles
   Glug outline-window
   Glug google-csimporter
+else
+  Plug 'https://tpope.io/vim/sleuth.git'
 endif
 
-call plug#begin()
 
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-treesitter/nvim-treesitter-textobjects'
-Plug 'https://tpope.io/vim/sleuth.git'
 Plug 'endel/vim-github-colorscheme'
 Plug 'lervag/file-line'
 
