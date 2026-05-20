@@ -130,6 +130,13 @@ lua << EOF
   require("lsp")
 EOF
 
+if filereadable("/usr/bin/bugged")
+  lua << EOF
+  require('cmp-buganizer').setup()
+EOF
+endif
+
+
 if exists(":Guifont")
   Guifont Monospace:h9
 endif
