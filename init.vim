@@ -12,8 +12,13 @@ else
 endif
 
 
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+if has('nvim-0.12.0')
+  Plug 'nvim-treesitter/nvim-treesitter', {'branch':'main', 'do': ':TSUpdate'}
+else
+  Plug 'nvim-treesitter/nvim-treesitter', {'branch':'master', 'do': ':TSUpdate'}
+endif
 Plug 'nvim-treesitter/nvim-treesitter-textobjects'
+Plug 'nvim-treesitter/nvim-treesitter-context'
 Plug 'endel/vim-github-colorscheme'
 Plug 'lervag/file-line'
 
@@ -135,7 +140,6 @@ if filereadable("/usr/bin/bugged")
   require('cmp-buganizer').setup()
 EOF
 endif
-
 
 if exists(":Guifont")
   Guifont Monospace:h9
